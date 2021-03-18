@@ -30,6 +30,7 @@ collections:
         multiple: true
         create: true
         options: ["Tags", "created", "from", "config.yml"]
+
   - label: "Settings"
     name: "settings"
     editor:
@@ -66,3 +67,8 @@ collections:
           - { label: Name, name: name, widget: string }
           - { label: Author, name: author, widget: string }
           - { label: URL, name: url, widget: string }
+      - label: "Home"
+        name: "home"
+        file: "src/_data/home.yaml"
+        fields:
+          - { label: Title, name: title, widget: string }
